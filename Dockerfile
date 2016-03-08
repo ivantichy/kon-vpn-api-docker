@@ -1,2 +1,3 @@
-FROM debian:jessie
+FROM ivantichy/oracle-java8
+
 
