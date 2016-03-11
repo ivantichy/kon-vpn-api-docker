@@ -21,8 +21,6 @@ COMMIT
 :FORWARD DROP [0:0]
 :OUTPUT ACCEPT [3:740]
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
--A INPUT -i tun0 -p tcp -m tcp --dport 8081 -j ACCEPT
--A INPUT -p tcp -m tcp --dport 8082 -j ACCEPT
 -A INPUT -i lo -j ACCEPT
 COMMIT
 # Completed on Sun Apr  5 19:02:12 2015
