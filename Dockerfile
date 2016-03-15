@@ -10,7 +10,8 @@ rm -rf /var/lib/apt/lists/*
 
 # TODO add user
 
-RUN mkdir -p /home/java/ && cd /home/java/ && git clone --branch docker-kernel-3.16 https://github.com/ivantichy/koncentrator-backend-docker.git /home/java && ls$
+RUN mkdir -p /home/java/ && cd /home/java/ && git clone \
+--branch docker-kernel-3.16 https://github.com/ivantichy/koncentrator-backend-docker.git /home/java && ls
 
 WORKDIR /home/java
 
