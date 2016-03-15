@@ -1,7 +1,6 @@
 
 #!/bin/bash
 
-
 Koncentrator/test/BasicTests/cleanserver.sh
 
 if [[ -f haveca ]]; then
@@ -10,3 +9,5 @@ if [[ -f haveca ]]; then
 
 fi
 
+cd Koncentrator
+./RunCERTAPI.sh >> cert.log
