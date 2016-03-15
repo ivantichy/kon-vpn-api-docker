@@ -17,7 +17,7 @@ WORKDIR /home/java
 
 RUN chmod +x ./Koncentrator/test/BasicTests/cleanserver.sh
 
-RUN ./Koncentrator/test/BasicTests/cleanserver.sh
+#RUN ./Koncentrator/test/BasicTests/cleanserver.sh
 
 COPY ./entrypoint.sh /entrypoint.sh
 
