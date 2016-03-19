@@ -13,6 +13,10 @@ if [[ ! -f haveca ]]; then
 
 fi
 
-cd Koncentrator
+service openvpn start 
 
-exec ./RunCERTAPI.sh >> cert.log
+java -classpath Koncentrator/*:Koncentrator/lib/* cz.ivantichy.httpapi.handlers.vpnapi.RunnerCERT >> cert.log
+
+service openvpn stop
+
+
