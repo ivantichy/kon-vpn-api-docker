@@ -15,7 +15,7 @@ fi
 
 service openvpn start 
 
-java -classpath Koncentrator/*:Koncentrator/lib/* cz.ivantichy.httpapi.handlers.vpnapi.RunnerCERT >> cert.log
+java -classpath Koncentrator/*:Koncentrator/lib/* cz.ivantichy.httpapi.handlers.vpnapi.RunnerVPN >> vpn.log
 
 service openvpn stop
 
